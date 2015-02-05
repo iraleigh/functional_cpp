@@ -1,7 +1,13 @@
-///Add Documentation
 #ifndef FOR_EACH_H
 #define FOR_EACH_H
-void forEach(int a[], int size,int (*function)(int));
-void forEach(double a[], int size,double (*function)(double));
-void forEach(char a[], int size,char (*function)(char));
+//Template Declaraion
+template<class T>
+void forEach(T a[], int size,T (*function)(T));
+///Template Definition
+/*!Note that the forEach.cpp file the included
+ * is not to be compiled it is just for
+ * instantiating the template.I am currently
+ * looking into the best practice for this.
+ */
+#include "forEach.cpp"
 #endif
