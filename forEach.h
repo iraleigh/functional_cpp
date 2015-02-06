@@ -2,7 +2,7 @@
 #define FOR_EACH_H
 //Template Declaraion
 template<class T>
-void forEach(T a[], int size,T (*function)(T));
+void forEach(T a[], int size,void (*function)(T));
 ///Template Definition
 /*!Note that the forEach.cpp file the included
  * is not to be compiled it is just for

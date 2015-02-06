@@ -7,7 +7,7 @@ using namespace std;
 
 void testing_forEach_with_Int_types();
 template <class U>
-U print_items(U item);
+void print_items(U item);
 
 int main() {
   testing_forEach_with_Int_types();
@@ -36,7 +36,6 @@ void testing_forEach_with_Int_types() {
 }
 
 template <class U>
-U print_items(U item){
+void print_items(U item){
   cout << item << ", ";
-  return item;
 }
